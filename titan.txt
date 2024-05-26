@@ -1,0 +1,19 @@
+## LLM Model used
+
+{
+  "modelId": "amazon.titan-text-express-v1",
+  "contentType": "application/json",
+  "accept": "application/json",
+  "body": "{\"inputText\":\"Meeting transcript: \\nMiguel: Hi Brant, I want to discuss the workstream  for our new product launch \\nBrant: Sure Miguel, is there anything in particular you want to discuss? \\nMiguel: Yes, I want to talk about how users enter into the product. \\nBrant: Ok, in that case let me add in Namita. \\nNamita: Hey everyone \\nBrant: Hi Namita, Miguel wants to discuss how users enter into the product. \\nMiguel: its too complicated and we should remove friction.  for example, why do I need to fill out additional forms?  I also find it difficult to find where to access the product when I first land on the landing page. \\nBrant: I would also add that I think there are too many steps. \\nNamita: Ok, I can work on the landing page to make the product more discoverable but brant can you work on the additonal forms? \\nBrant: Yes but I would need to work with James from another team as he needs to unblock the sign up workflow.  Miguel can you document any other concerns so that I can discuss with James only once? \\nMiguel: Sure. \\nFrom the meeting transcript above, Create a list of action items for each person. \\n \\n\",\"textGenerationConfig\":{\"maxTokenCount\":4096,\"stopSequences\":[\"User:\"],\"temperature\":0,\"topP\":1}}"
+}
+
+## Embedding Model used
+
+{
+ "modelId": "amazon.titan-embed-text-v1",
+ "contentType": "application/json",
+ "accept": "*/*",
+ "body": "{\"inputText\":\"this is where you place your input text\"}"
+}
+
+
